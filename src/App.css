@@ -1,0 +1,321 @@
+:root {
+  font-size: 10px;
+  --mainFont: "poppins", sans-serif;
+  --titleFont: "Maven pro", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: var(--mainFont);
+}
+
+body {
+  background: #cfbaf0;
+}
+
+/* ######################### Search bar component #############################*/
+.input-container {
+  width: 40vw;
+  height: 4.8rem;
+  display: block;
+  margin: 5.6rem auto;
+  position: relative;
+}
+
+.fa-magnifying-glass {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 50%;
+  left: 1.6rem;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.search-bar {
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem 4.8rem;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.7rem;
+  font-family: var(--mainFont);
+  color: #000;
+  font-weight: 500;
+  outline: transparent;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.search-btn {
+  color: #000;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  right: 1.6rem;
+  border-radius: 7px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border: none;
+  padding: 0.8rem;
+  background-color: #f1c0e8;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background-color: rgba(241, 192, 232, 0.8);
+}
+
+/* ######################### Main countainer ##################################*/
+.main-container {
+  display: none;
+  opacity: 0;
+  width: 60vw;
+  height: 70vh;
+  max-width: 900px;
+  max-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  background: linear-gradient(66.14deg, #f0b5ce 0%, #8c6bae 99.13%);
+  padding: 3.2rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+}
+
+.over-all {
+  width: 60%;
+  height: 100%;
+}
+
+.country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.country-name {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-left: -2.5rem;
+}
+
+.image {
+  width: 12rem;
+}
+
+.over-all .temperature {
+  font-weight: 400;
+  font-size: 10rem;
+  margin-top: -2.5rem;
+}
+
+.over-all h3 span {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-left: -1rem;
+}
+
+.date {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: -2rem;
+  margin-left: 1.5rem;
+}
+
+.info {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.info p {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* ######################### Details section ##################################*/
+.details {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.details img {
+  width: 2.5rem;
+}
+
+.humidity,
+.humidity-title,
+.wind,
+.wind-title,
+.wind-direction,
+.wind-direction-title,
+.visibility,
+.visibility-title {
+  width: 100%;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 1.5rem;
+  padding-left: 1rem;
+}
+
+.humidity-title,
+.wind-title,
+.wind-direction-title,
+.visibility-title {
+  width: 60%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.humidity-title p,
+.wind-title p,
+.wind-direction-title p,
+.visibility-title p {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.humidity-data p,
+.wind-data p,
+.wind-direction-data p,
+.visibility-data p {
+  font-size: 2.5rem;
+}
+
+.humidity-data span,
+.wind-data span,
+.wind-direction-data span,
+.visibility-data span {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+/* ######################### Phone version styling ##################################*/
+@media (max-width: 768px) {
+  :root {
+    font: 7px;
+  }
+  body {
+    background-color: red;
+  }
+  .input-container {
+    width: 80vw;
+  }
+  .main-container {
+    width: 90vw;
+    min-height: 700px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .over-all {
+    width: 100%;
+    height: 60%;
+  }
+  .details {
+    width: 100%;
+    height: 40%;
+  }
+  .humidity,
+  .humidity-title,
+  .wind,
+  .wind-title,
+  .wind-direction,
+  .wind-direction-title,
+  .visibility,
+  .visibility-title {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .info {
+    margin-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .info p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+  }
+}
+/*# sourceMappingURL=App.css.map */
