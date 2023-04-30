@@ -267,9 +267,6 @@ body {
   :root {
     font: 7px;
   }
-  body {
-    background-color: red;
-  }
   .input-container {
     width: 80vw;
   }
