@@ -18,6 +18,7 @@ body {
 }
 
 /* ######################### Search bar component #############################*/
+
 .input-container {
   width: 40vw;
   height: 4.8rem;
@@ -267,9 +268,11 @@ body {
   :root {
     font: 7px;
   }
+
   .input-container {
     width: 80vw;
   }
+
   .main-container {
     width: 90vw;
     min-height: 700px;
@@ -281,14 +284,17 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .over-all {
     width: 100%;
     height: 60%;
   }
+
   .details {
     width: 100%;
     height: 40%;
   }
+
   .humidity,
   .humidity-title,
   .wind,
@@ -300,6 +306,7 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
+
   .info {
     margin-top: 5rem;
     display: -webkit-box;
@@ -309,10 +316,12 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
   .info p {
     font-size: 1.2rem;
     opacity: 0.9;
     font-weight: 300;
   }
 }
+
 /*# sourceMappingURL=App.css.map */

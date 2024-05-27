@@ -19,10 +19,12 @@ function MainContainer(props) {
   const [minTemp, setMinTemp] = useState();
   const [feels_like, setFeelsLike] = useState();
 
+  const API_KEY = "Your openweathermap Api Key";
+
   useEffect(() => {
     if (value !== undefined) {
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=895284fb2d2c50a520ea537456963d9c`
+        `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${API_KEY}`
       )
         .then((res) => res.json())
         .then((data) => {
